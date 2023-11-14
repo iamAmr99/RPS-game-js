@@ -32,7 +32,7 @@ function user() {
 
 function game(player, boss) {
     if (player == 'rock') {
-        playerHand.src = '/assets/imgs/sprites/rock.gif'
+        playerHand.src = 'assets/imgs/sprites/rock.gif'
         if (boss == 'scissors') {
             bossStatusColor.classList.remove('bg-success')
             bossStatusColor.classList.add('bg-danger')
@@ -58,7 +58,7 @@ function game(player, boss) {
         }
     }
     else if (player == 'paper') {
-        playerHand.src = '/assets/imgs/sprites/paper.gif'
+        playerHand.src = 'assets/imgs/sprites/paper.gif'
         if (boss == 'rock') {
             bossStatusColor.classList.remove('bg-success')
             bossStatusColor.classList.add('bg-danger')
@@ -83,7 +83,7 @@ function game(player, boss) {
             playerStatus.innerHTML = 'Tie'
         }
     } else if (player == 'scissors') {
-        playerHand.src = '/assets/imgs/sprites/scissors.gif'
+        playerHand.src = 'assets/imgs/sprites/scissors.gif'
         if (boss == 'paper') {
             bossStatusColor.classList.remove('bg-success')
             bossStatusColor.classList.add('bg-danger')
