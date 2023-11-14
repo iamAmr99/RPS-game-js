@@ -17,3 +17,35 @@ footer {
   position: absolute;
   top:94.3% !important;
 }
+@media (max-height:915px) and (max-width:430px)  { /* *portrait view */
+  body{
+    height: 100% !important;
+  }
+  .container {
+    position: absolute !important;
+    top: 0 !important;
+  }
+  .player-choices div button {
+    font-size: 0.5em !important;
+  }
+  .player-choices div {
+    width: 100% !important;
+  }
+  .player-choices div i {
+    font-size: 0.5em !important;
+  }
+  .skull{
+    max-width: 10rem !important;
+    height: auto !important;
+}
+.player {
+    max-width: auto !important;
+    height: 12rem !important;
+}
+  footer {
+    top: 100% !important;
+  }
+}
+@media (max-width:915px) and (max-height:430px)  {/* *landscape */
+  
+}
