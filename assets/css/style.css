@@ -17,7 +17,7 @@ footer {
   position: absolute;
   top: 94.3% !important;
 }
-@media (max-height: 915px) and (max-width: 430px) {
+@media (max-height: 932px) and (max-width: 430px) {
   /* *portrait view */
   body {
     height: 100% !important;
@@ -40,8 +40,8 @@ footer {
     height: auto !important;
   }
   .player {
-    max-width: auto !important;
-    height: 10rem !important;
+    max-width: 10rem !important;
+    height: auto !important;
   }
   footer {
     top: 100% !important;
