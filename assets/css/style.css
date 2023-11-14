@@ -14,6 +14,6 @@ body {
     height: 18.8rem;
 }
 footer {
-  
-  top:97.3% !important;
+  position: absolute;
+  top:94.3% !important;
 }
