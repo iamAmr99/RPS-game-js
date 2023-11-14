@@ -1,12 +1,3 @@
-/* let rockBtn = document.getElementById('rockBtn')
-let paperBtn = document.getElementById('paperBtn')
-let scissorsBtn = document.getElementById('scissorsBtn')
-
-let btnList = []
-btnList.push(rockBtn.innerHTML,paperBtn.innerHTML,scissorsBtn.innerHTML)
-console.log(btnList); */
-
-
 let bossChoice = document.getElementById('bossChoice')
 let bossScore = document.getElementById('bossScore')
 let bossStatus = document.getElementById('bossStatus')
@@ -36,85 +27,85 @@ function user() {
     }
     bossChoice.innerHTML = computerChoice + '!'
 
-   game(userChoice,computerChoice,playerStatusColor)
+    game(userChoice, computerChoice, playerStatusColor)
 }
 
-function game(player,boss){
+function game(player, boss) {
     if (player == 'rock') {
-        playerHand.src = '/RPS game js/assets/imgs/sprites/rock.gif'
+        playerHand.src = '/assets/imgs/sprites/rock.gif'
         if (boss == 'scissors') {
             bossStatusColor.classList.remove('bg-success')
             bossStatusColor.classList.add('bg-danger')
-            bossStatus.innerHTML='Loser'
+            bossStatus.innerHTML = 'Loser'
             playerStatusColor.classList.remove('bg-danger')
             playerStatusColor.classList.add('bg-success')
-            playerStatus.innerHTML='Winner'
+            playerStatus.innerHTML = 'Winner'
         }
-        else if (boss == 'paper'){
+        else if (boss == 'paper') {
             bossStatusColor.classList.remove('bg-danger')
             bossStatusColor.classList.add('bg-success')
-            bossStatus.innerHTML='Winner'
+            bossStatus.innerHTML = 'Winner'
             playerStatusColor.classList.remove('bg-success')
             playerStatusColor.classList.add('bg-danger')
-            playerStatus.innerHTML='Loser'
+            playerStatus.innerHTML = 'Loser'
         } else if (boss == 'rock') {
-            bossStatusColor.classList.remove('bg-success','bg-danger')
+            bossStatusColor.classList.remove('bg-success', 'bg-danger')
             bossStatusColor.classList.add('bg-primary')
-            bossStatus.innerHTML='Tie'
-            playerStatusColor.classList.remove('bg-success','bg-danger')
+            bossStatus.innerHTML = 'Tie'
+            playerStatusColor.classList.remove('bg-success', 'bg-danger')
             playerStatusColor.classList.add('bg-primary')
-            playerStatus.innerHTML='Tie'
+            playerStatus.innerHTML = 'Tie'
         }
     }
     else if (player == 'paper') {
-        playerHand.src = '/RPS game js/assets/imgs/sprites/paper.gif'
+        playerHand.src = 'assets/imgs/sprites/paper.gif'
         if (boss == 'rock') {
             bossStatusColor.classList.remove('bg-success')
             bossStatusColor.classList.add('bg-danger')
-            bossStatus.innerHTML='Loser'
+            bossStatus.innerHTML = 'Loser'
             playerStatusColor.classList.remove('bg-danger')
             playerStatusColor.classList.add('bg-success')
-            playerStatus.innerHTML='Winner'
+            playerStatus.innerHTML = 'Winner'
         }
-        else if (boss == 'scissors'){
+        else if (boss == 'scissors') {
             bossStatusColor.classList.remove('bg-danger')
             bossStatusColor.classList.add('bg-success')
-            bossStatus.innerHTML='Winner'
+            bossStatus.innerHTML = 'Winner'
             playerStatusColor.classList.remove('bg-success')
             playerStatusColor.classList.add('bg-danger')
-            playerStatus.innerHTML='Loser'
+            playerStatus.innerHTML = 'Loser'
         } else if (boss == 'paper') {
-            bossStatusColor.classList.remove('bg-success','bg-danger')
+            bossStatusColor.classList.remove('bg-success', 'bg-danger')
             bossStatusColor.classList.add('bg-primary')
-            bossStatus.innerHTML='Tie'
-            playerStatusColor.classList.remove('bg-success','bg-danger')
+            bossStatus.innerHTML = 'Tie'
+            playerStatusColor.classList.remove('bg-success', 'bg-danger')
             playerStatusColor.classList.add('bg-primary')
-            playerStatus.innerHTML='Tie'
+            playerStatus.innerHTML = 'Tie'
         }
-    }else if (player == 'scissors') {
-        playerHand.src = '/RPS game js/assets/imgs/sprites/scissors.gif'
+    } else if (player == 'scissors') {
+        playerHand.src = 'assets/imgs/sprites/scissors.gif'
         if (boss == 'paper') {
             bossStatusColor.classList.remove('bg-success')
             bossStatusColor.classList.add('bg-danger')
-            bossStatus.innerHTML='Loser'
+            bossStatus.innerHTML = 'Loser'
             playerStatusColor.classList.remove('bg-danger')
             playerStatusColor.classList.add('bg-success')
-            playerStatus.innerHTML='Winner'
+            playerStatus.innerHTML = 'Winner'
         }
-        else if (boss == 'rock'){
+        else if (boss == 'rock') {
             bossStatusColor.classList.remove('bg-danger')
             bossStatusColor.classList.add('bg-success')
-            bossStatus.innerHTML='Winner'
+            bossStatus.innerHTML = 'Winner'
             playerStatusColor.classList.remove('bg-success')
             playerStatusColor.classList.add('bg-danger')
-            playerStatus.innerHTML='Loser'
+            playerStatus.innerHTML = 'Loser'
         } else if (boss == 'scissors') {
-            bossStatusColor.classList.remove('bg-success','bg-danger')
+            bossStatusColor.classList.remove('bg-success', 'bg-danger')
             bossStatusColor.classList.add('bg-primary')
-            bossStatus.innerHTML='Tie'
-            playerStatusColor.classList.remove('bg-success','bg-danger')
+            bossStatus.innerHTML = 'Tie'
+            playerStatusColor.classList.remove('bg-success', 'bg-danger')
             playerStatusColor.classList.add('bg-primary')
-            playerStatus.innerHTML='Tie'
+            playerStatus.innerHTML = 'Tie'
         }
     }
 }
