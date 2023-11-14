@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <!-- ?logo -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/imgs/logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/imgs/logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/imgs/logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/imgs/logo/site.webmanifest" />
+    <!-- ?logo end -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="">
+    <div class="container">
+      <div class="row gap-2">
+        <div
+          class="col border p-0 d-flex align-items-center justify-content-between flex-column bg-white"
+        >
+          <div
+            class="w-100 bg-primary text-center d-flex flex-row-reverse"
+            id="playerStatusColor"
+          >
+            <div
+              class="border border-black border-1 bg-white px-5 d-flex align-items-center"
+              id="playerScore"
+            >
+              0
+            </div>
+            <h3 class="w-100 text text-white p-2" id="playerStatus">Player</h3>
+          </div>
+          <div class="my-2">
+            <img
+              src="assets/imgs/sprites/player.gif"
+              alt="player"
+              id="playerHand"
+            />
+          </div>
+          <div
+            class="player-choices d-flex justify-content-between align-items-center w-100"
+          >
+            <div class="bg-primary text-white border-end w-100">
+              <button
+                type="button"
+                class="btn text-white rounded-0 fw-bold"
+                id="rock"
+                title="Rock"
+              >
+                Rock
+              </button>
+            </div>
+            <div class="bg-primary text-white border-end w-100">
+              <button
+                type="button"
+                class="btn text-white rounded-0 fw-bold"
+                id="paper"
+                title="Paper"
+              >
+                Paper
+              </button>
+            </div>
+            <div class="bg-primary text-white border-end w-100">
+              <button
+                type="button"
+                class="btn text-white rounded-0 fw-bold"
+                id="scissors"
+                title="Scissors"
+              >
+                Scissors
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col border p-0 d-flex align-items-center justify-content-between flex-column bg-white"
+        >
+          <div class="w-100 bg-primary text-center d-flex" id="bossStatusColor">
+            <div
+              class="border border-black border-1 bg-white px-5 d-flex align-items-center"
+              id="bossScore"
+            >
+              0
+            </div>
+            <h3 class="w-100 text-white p-2" id="bossStatus">Boss</h3>
+          </div>
+          <div class="my-2">
+            <img src="assets/imgs/sprites/boss.gif" alt="boss" class="skull" />
+          </div>
+          <div class="bg-primary w-100 text-center text-white p-2 fs-4">
+            <span id="bossChoice" class="fw-bold text-capitalize"
+              >you will lose!!</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="w-100 bg-dark text-white d-flex justify-content-center align-items-center"
+    >
+      ---<i class="fas fa-brands fa-github"></i>---
+    </footer>
+    <script src="assets/node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <script src="assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

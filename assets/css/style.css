@@ -1,0 +1,19 @@
+body {
+  background-image: url("../imgs/bg.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "press start 2p";
+}
+.skull{
+    max-width: 14.4rem;
+    height: auto;
+}
+.player {
+    max-width: auto;
+    height: 18.8rem;
+}
+footer {
+  
+  top:97.3% !important;
+}
