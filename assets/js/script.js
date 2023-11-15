@@ -33,6 +33,7 @@ function user() {
 function game(player, boss) {
     if (player == 'rock') {
         playerHand.src = 'assets/imgs/sprites/rock.gif'
+        playerHand.style
         if (boss == 'scissors') {
             bossStatusColor.classList.remove('bg-success')
             bossStatusColor.classList.add('bg-danger')
