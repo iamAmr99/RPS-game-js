@@ -9,22 +9,23 @@ body {
   max-width: 14.4rem;
   height: auto;
 }
-.player {
+#playerHand {
   max-width: auto;
-  height: 18.8rem;
+  height: 14.4rem;
 }
 footer {
   position: absolute;
-  top: 94.3% !important;
+  top: 95% !important;
 }
 @media (max-height: 932px) and (max-width: 430px) {
   /* *portrait view */
   body {
     height: 100% !important;
+    flex: none;
   }
   .container {
     position: absolute !important;
-    top: 0 !important;
+    top: 0% !important;
   }
   .player-choices div button {
     font-size: 0.5em !important;
@@ -39,12 +40,16 @@ footer {
     max-width: 10rem !important;
     height: auto !important;
   }
-  .player {
+  #playerHand {
     max-width: 10rem !important;
     height: auto !important;
   }
+  #bossChoice {
+    font-size: 0.8em;
+  }
   footer {
-    top: 100% !important;
+    top: 50% !important;
+    position: relative !important;
   }
 }
 @media (max-width: 915px) and (max-height: 430px) {
