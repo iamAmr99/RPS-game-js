@@ -1,8 +1,8 @@
 let bossChoice = document.getElementById('bossChoice')
-let bossScore = document.getElementById('bossScore')
+let bossScore = document.getElementById('bossScore').innerHTML
 let bossStatus = document.getElementById('bossStatus')
 let bossStatusColor = document.getElementById('bossStatusColor')
-let playerScore = document.getElementById('playerScore')
+let playerScore = document.getElementById('playerScore').innerHTML
 let playerStatus = document.getElementById('playerStatus')
 let playerStatusColor = document.getElementById('playerStatusColor')
 
@@ -13,9 +13,9 @@ document.getElementById('rock').onclick = user;
 document.getElementById('paper').onclick = user;
 document.getElementById('scissors').onclick = user;
 
+
 function user() {
     userChoice = this.id;
-    console.log("User: " + userChoice);
 
     var computerChoice = Math.random();
     if (computerChoice < 0.34) {
@@ -27,7 +27,7 @@ function user() {
     }
     bossChoice.innerHTML = computerChoice + '!'
 
-    game(userChoice, computerChoice, playerStatusColor)
+    game(userChoice, computerChoice)
 }
 
 function game(player, boss) {
@@ -67,11 +67,13 @@ function game(player, boss) {
             playerStatusColor.classList.remove('bg-danger')
             playerStatusColor.classList.add('bg-success')
             playerStatus.innerHTML = 'Winner'
+            playerScore = +1
         }
         else if (boss == 'scissors') {
             bossStatusColor.classList.remove('bg-danger')
             bossStatusColor.classList.add('bg-success')
             bossStatus.innerHTML = 'Winner'
+            bossScore = +1
             playerStatusColor.classList.remove('bg-success')
             playerStatusColor.classList.add('bg-danger')
             playerStatus.innerHTML = 'Loser'
@@ -92,11 +94,13 @@ function game(player, boss) {
             playerStatusColor.classList.remove('bg-danger')
             playerStatusColor.classList.add('bg-success')
             playerStatus.innerHTML = 'Winner'
+            playerScore = +1
         }
         else if (boss == 'rock') {
             bossStatusColor.classList.remove('bg-danger')
             bossStatusColor.classList.add('bg-success')
             bossStatus.innerHTML = 'Winner'
+            bossScore = +1
             playerStatusColor.classList.remove('bg-success')
             playerStatusColor.classList.add('bg-danger')
             playerStatus.innerHTML = 'Loser'
