@@ -101,10 +101,10 @@ function tie() {
 function updateScore() {
     playerScoreView.innerHTML = playerScore;
     bossScoreView.innerHTML = bossScore;
-if (playerScore == 11) {
+if (playerScore == 10) {
     resetScore()
     alert('Player saved the day !!!')
-} else if(bossScore == 11) {
+} else if(bossScore == 10) {
     resetScore()
 alert('You couldn\'t stop the Boss')
 }
