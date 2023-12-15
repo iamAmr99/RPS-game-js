@@ -16,10 +16,8 @@ document.getElementById('rock').onclick = user;
 document.getElementById('paper').onclick = user;
 document.getElementById('scissors').onclick = user;
 
-
 function user() {
     userChoice = this.id;
-
     var computerChoice = Math.random();
     if (computerChoice < 0.34) {
         computerChoice = "rock";
@@ -29,21 +27,19 @@ function user() {
         computerChoice = "scissors";
     }
     bossChoice.innerHTML = computerChoice + '!'
-
     game(userChoice, computerChoice)
 }
-
 function game(player, boss) {
     if (player == 'rock') {
         playerHand.src = 'assets/imgs/sprites/rock.gif'
         playerHand.style
         if (boss == 'scissors') {
-           playerWins()
+            playerWins()
         }
         else if (boss == 'paper') {
-           bossWins()
+            bossWins()
         } else if (boss == 'rock') {
-           tie()
+            tie()
         }
     }
     else if (player == 'paper') {
@@ -68,7 +64,6 @@ function game(player, boss) {
         }
     }
 }
-
 function playerWins() {
     playerScore += 1
     bossStatusColor.classList.remove('bg-success')
@@ -101,13 +96,13 @@ function tie() {
 function updateScore() {
     playerScoreView.innerHTML = playerScore;
     bossScoreView.innerHTML = bossScore;
-if (playerScore == 10) {
-    resetScore()
-    alert('Player saved the day !!!')
-} else if(bossScore == 10) {
-    resetScore()
-alert('You couldn\'t stop the Boss')
-}
+    if (playerScore == 10) {
+        resetScore()
+        alert('Player saved the day !!!')
+    } else if (bossScore == 10) {
+        resetScore()
+        alert('You couldn\'t stop the Boss')
+    }
 }
 function resetScore() {
     playerScore = 0;
