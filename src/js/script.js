@@ -31,7 +31,7 @@ function user() {
 }
 function game(player, boss) {
     if (player == 'rock') {
-        playerHand.src = 'assets/imgs/sprites/rock.gif'
+        playerHand.src = 'src/imgs/sprites/rock.gif'
         playerHand.style
         if (boss == 'scissors') {
             playerWins()
@@ -43,7 +43,7 @@ function game(player, boss) {
         }
     }
     else if (player == 'paper') {
-        playerHand.src = 'assets/imgs/sprites/paper.gif'
+        playerHand.src = 'src/imgs/sprites/paper.gif'
         if (boss == 'rock') {
             playerWins()
         }
@@ -53,7 +53,7 @@ function game(player, boss) {
             tie()
         }
     } else if (player == 'scissors') {
-        playerHand.src = 'assets/imgs/sprites/scissors.gif'
+        playerHand.src = 'src/imgs/sprites/scissors.gif'
         if (boss == 'paper') {
             playerWins()
         }
