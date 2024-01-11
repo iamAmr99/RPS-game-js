@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
+    <title>RPS</title>
     <!-- ?logo -->
     <link
       rel="apple-touch-icon"
@@ -40,105 +40,140 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body
-    class="vh-100 d-flex flex-column justify-content-center align-items-center"
-  >
-    <div class="container">
-      <div class="row gap-2">
-        <div
-          class="col border p-0 d-flex align-items-center justify-content-between flex-column bg-white"
-        >
-          <div
-            class="w-100 bg-primary text-center d-flex flex-row-reverse"
-            id="playerStatusColor"
-          >
-            <div
-              class="border border-black border-1 bg-white px-3 d-flex align-items-center"
-              id="playerScoreView"
-            > 0
-            </div>
-            <h3 class="w-100 text-white p-2" id="playerStatus">Player</h3>
-          </div>
-          <div class="my-2 w-100 text-center">
-            <img
-              src="assets/imgs/sprites/player.gif"
-              alt="player"
-              id="playerHand"
-            />
-          </div>
-          <div
-            class="player-choices w-100 d-flex -stretch justify-content-between"
-          >
-            <div
-              class="bg-primary text-white border-end d-flex align-items-center justify-content-center w-100"
-            >
-              <button
-                type="button"
-                class="btn text-white rounded-0 fw-bold fs-4 px-1"
-                id="rock"
-                title="Rock"
-              >
-                Rock
-              </button>
-              <i class="fas fa-hand-rock fa-lg px-1"></i>
-            </div>
-            <div
-              class="bg-primary text-white border-end d-flex align-items-center justify-content-center w-100"
-            >
-              <button
-                type="button"
-                class="btn text-white rounded-0 fw-bold fs-4 px-1"
-                id="paper"
-                title="Paper"
-              >
-                Paper
-              </button>
-              <i class="fas fa-hand-paper fa-lg px-1"></i>
-            </div>
-            <div
-              class="bg-primary text-white border-end d-flex align-items-center justify-content-center w-100"
-            >
-              <button
-                type="button"
-                class="btn text-white rounded-0 fw-bold fs-5 v"
-                id="scissors"
-                title="Scissors"
-              >
-                Scissors
-              </button>
-              <i class="fas fa-hand-scissors fa-rotate-90 fa-lg px-1"></i>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col border p-0 d-flex align-items-center justify-content-between flex-column bg-white"
-        >
-          <div class="w-100 bg-primary text-center d-flex" id="bossStatusColor">
-            <div
-              class="border border-black border-1 bg-white px-3 d-flex align-items-center"
-              id="bossScoreView"
-            >0
-            </div>
-            <h3 class="w-100 text-white p-2" id="bossStatus">Boss</h3>
-          </div>
-          <div class="my-2">
-            <img src="assets/imgs/sprites/boss.gif" alt="boss" class="skull" />
-          </div>
-          <div class="bg-primary w-100 text-center text-white p-2 fs-4">
-            <span id="bossChoice" class="fw-bold text-capitalize"
-              >you will lose!!</span
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer
-      class="w-100 bg-dark text-white d-flex justify-content-center align-items-center fs-3"
+  <body class="d-flex flex-column justify-content-between align-items-center">
+    <!-- ? ================================================== HEADER start ================================================== -->
+    <header class="w-100 bg-dark text-white">
+      <h1 class="m-0 p-1 text-center fa-fade">Rock Paper Scissors</h1>
+    </header>
+    <!-- ? ================================================== HEADER end ================================================== -->
+
+    <!-- ? ================================================== MAIN start ================================================== -->
+    <main
+      class="w-100 text-white container d-flex justify-content-center gap-2 align-items-center"
     >
-      ---<i class="fas fa-brands fa-github"></i>---
+      <!-- ? ================================================== PLAYER start ================================================== -->
+      <!-- * player container -->
+      <div
+        class="palyer w-50 border border-2 bg-white h-100 d-flex flex-column justify-content-between"
+      >
+        <!-- * player title-->
+        <div
+          class="player-title bg-primary d-flex justify-content-around align-items-center p-1"
+          id="playerStatusColor"
+        >
+          <!-- * player name -->
+          <h2 class="m-0 w-75 text-center" id="playerStatus">Player</h2>
+          <!-- * player score -->
+          <div
+            class="player-score border border-2 border-black bg-white text-black text-center w-25 p-2" id="playerStatusColor"
+          >
+            <h6 class="m-0 fs-2" id="playerScoreView">0</h6>
+          </div>
+          <!-- * player score end -->
+          <!-- * player title end -->
+        </div>
+        <!-- * player container end -->
+
+        <!-- * player hand image -->
+        <div class="player-hand text-center">
+          <img
+            src="assets/imgs/sprites/player.gif"
+            class="my-2"
+            id="playerHand"
+          />
+        </div>
+        <!-- * player hand image end -->
+
+        <!-- * player choices -->
+        <div
+          class="player-choices d-flex justify-content-between align-items-center bg-primary border-top border-2"
+        >
+          <!-- * rock button -->
+          <button
+            type="button"
+            title="rock button"
+            class="rock-btn btn btn-primary border border-1 rounded-0 d-flex d-flex justify-content-around align-items-center p-3"
+            id="rock"
+          >
+            <h6 class="m-0 fs-4">Rock</h6>
+            <i class="fas fa-hand-rock hand-icon"></i>
+          </button>
+          <!-- * rock button -->
+
+          <!-- * paper button -->
+          <button
+            type="button"
+            title="paper button"
+            class="paper-btn btn btn-primary border border-1 rounded-0 d-flex d-flex justify-content-around align-items-center p-3"
+            id="paper"
+          >
+            <h6 class="m-0 fs-4">Paper</h6>
+            <i class="fas fa-hand hand-icon"></i>
+          </button>
+          <!-- * paper button end -->
+
+          <!-- * scissors button -->
+          <button
+            type="button"
+            title="scissors button"
+            class="scissors-btn btn btn-primary border border-1 rounded-0 d-flex d-flex justify-content-around align-items-center p-3"
+            id="scissors"
+          >
+            <h6 class="m-0 fs-4">Scissors</h6>
+            <i class="fas fa-hand-scissors fa-rotate-90 hand-icon"></i>
+          </button>
+          <!-- * scissors button end -->
+        </div>
+        <!-- * player choices end -->
+      </div>
+      <!-- * player container end -->
+      <!-- ? ================================================== PLAYER end================================================== -->
+
+      <!-- ? ================================================== BOSS start ================================================== -->
+      <!-- * boss container -->
+      <div
+        class="boss w-50 border border-2 bg-white d-flex h-100 flex-column justify-content-between"
+      >
+        <!-- * boss title -->
+        <div
+          class="boss-title bg-primary d-flex justify-content-around align-items-center flex-row-reverse p-1"
+          id="bossStatusColor"
+        >
+          <h2 class="m-0 w-75 text-center"  id="bossStatus">Boss</h2>
+          <div
+            class="boss-score border border-2 border-black bg-white text-black text-center w-25"
+          >
+            <h6 class="m-0 p-2 fs-2" id="bossScoreView">0</h6>
+          </div>
+        </div>
+        <!-- * boss image -->
+        <div class="text-center my-2">
+          <img src="assets/imgs/sprites/boss.gif" alt="" srcset="" />
+        </div>
+        <!-- * boss image end -->
+        <!-- * boss quotes -->
+        <div
+          class="boss-quotes-section bg-primary text-center border-top border-2 p-2"
+        >
+          <h2 class="my-1 boss-quotes" id="bossChoice">You will lose !</h2>
+        </div>
+        <!-- * boss quotes end -->
+      </div>
+      <!-- * boss container end -->
+      <!-- ? ================================================== BOSS end================================================== -->
+    </main>
+    <!-- ? ================================================== MAIN end ================================================== -->
+
+    <!-- ? ================================================== FOOTER start ================================================== -->
+    <footer class="bg-dark text-white text-center w-100">
+      <h3 class="my-1"><i class="fas fa-brands fa-github fa-beat-fade"></i></h3>
     </footer>
+    <!-- ? ================================================== FOOTER end ================================================== -->
+
+    <!-- ? ================================================== SCRIPT start ================================================== -->
     <script src="assets/node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
     <script src="assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <!-- ? ================================================== SCRIPT end ================================================== -->
   </body>
 </html>

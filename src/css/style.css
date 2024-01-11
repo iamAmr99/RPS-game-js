@@ -1,0 +1,204 @@
+body {
+  background-image: url("../imgs/bg.gif");
+  background-size: cover;
+  max-height: fit-content;
+  font-family: "press start 2p";
+  height: 100vh;
+}
+h1 {
+  font-size: 2em;
+}
+main {
+  height: fit-content;
+}
+
+.hand-icon {
+  font-size: 1.8em;
+}
+img {
+  height: 20rem;
+}
+.rock-btn,
+.scissors-btn,
+.paper-btn {
+  width: 33.33%;
+}
+.rock-btn > h6,
+.paper-btn > h6 {
+  font-size: 1em !important;
+}
+.scissors-btn > h6 {
+  font-size: 0.8em !important;
+}
+.boss-quotes {
+  font-size: 1.8em;
+}
+@media (max-height: 932px) and (max-width: 430px) {
+  body {
+    max-height: fit-content;
+  }
+
+  h1 {
+    font-size: 0.8em;
+  }
+
+  img {
+    height: 10rem;
+  }
+  .boss-quotes {
+    padding: 0.1rem !important;
+    margin: 0.1rem !important;
+    width: 100%;
+    font-size: 0.5em;
+  }
+  .rock-btn > h6,
+  .paper-btn > h6 {
+    font-size: 0.4em !important;
+  }
+  .scissors-btn > h6 {
+    font-size: 0.3em !important;
+  }
+  .hand-icon {
+    font-size: 0.6em;
+  }
+  .rock-btn,
+  .scissors-btn,
+  .paper-btn {
+    width: 33.33%;
+    padding: 0.6rem !important;
+    margin: 0 !important;
+  }
+  h2 {
+    font-size: 0.6em;
+  }
+  .player-score h6 {
+    font-size: 1.2em !important;
+  }
+  .boss-score h6 {
+    font-size: 1.2em !important;
+  }
+}
+@media (min-height: 932px) and (min-width: 430px) {
+  body {
+    max-height: fit-content;
+  }
+  h1 {
+    font-size: 0.8em;
+  }
+  img {
+    height: 15rem;
+  }
+  .boss-quotes {
+    padding: 0.5rem !important;
+    margin: 0.1rem !important;
+    width: 100%;
+    font-size: 0.8em;
+  }
+  .rock-btn,
+  .scissors-btn,
+  .paper-btn {
+    width: 33.33%;
+    padding: 0.7rem !important;
+    margin: 0 !important;
+  }
+  .rock-btn > h6,
+  .paper-btn > h6 {
+    font-size: 0.7em !important;
+  }
+  .scissors-btn > h6 {
+    font-size: 0.5em !important;
+    height: 100% !important;
+    padding: 0.1rem !important;
+  }
+  .hand-icon {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 1024px) and (max-height: 600px) {
+  body {
+    max-height: fit-content;
+  }
+  h1 {
+    font-size: 0.8em;
+  }
+  img {
+    height: 10rem;
+  }
+  .boss-quotes {
+    padding: 0.5rem !important;
+    margin: 0.1rem !important;
+    width: 100%;
+    font-size: 0.8em;
+  }
+  .rock-btn,
+  .scissors-btn,
+  .paper-btn {
+    width: 33.33%;
+    padding: 0.7rem !important;
+    margin: 0 !important;
+  }
+  .rock-btn > h6,
+  .paper-btn > h6 {
+    font-size: 0.7em !important;
+  }
+  .scissors-btn > h6 {
+    font-size: 0.5em !important;
+    height: 100% !important;
+  }
+  .hand-icon {
+    font-size: 0.8em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  .player-score h6 {
+    font-size: 1.2em !important;
+  }
+  .boss-score h6 {
+    font-size: 1.2em !important;
+  }
+}
+@media (max-width: 320px) and (max-height: 600px) {
+  body {
+    max-height: fit-content;
+  }
+  h1 {
+    font-size: 0.8em;
+  }
+  img {
+    height: 5rem;
+  }
+  .boss-quotes {
+    padding: 0.5rem !important;
+    margin: 0.1rem !important;
+    width: 100%;
+    font-size: 0.5em;
+  }
+  .rock-btn,
+  .scissors-btn,
+  .paper-btn {
+    width: 33.33%;
+    padding: 0.7rem !important;
+    margin: 0 !important;
+  }
+  .rock-btn > h6,
+  .paper-btn > h6 {
+    font-size: 0.3em !important;
+  }
+  .scissors-btn > h6 {
+    font-size: 0.2em !important;
+    height: 100% !important;
+  }
+  .hand-icon {
+    font-size: 0.3em;
+  }
+  h2 {
+    font-size: 0.6em;
+  }
+  .player-score h6 {
+    font-size: 0.6em !important;
+  }
+  .boss-score h6 {
+    font-size: 0.6em !important;
+  }
+}
